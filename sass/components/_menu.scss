@@ -1,0 +1,44 @@
+.header-container {
+    .navbar__links-container {
+        .navbar__link {
+            text-transform: capitalize;
+            color: $light-black;
+            font-weight: 500;
+            padding-right: 2rem;
+        }
+        .navbar__link:hover {
+            color: $peru;
+        }
+    }
+    .menuActive {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .btn_menu {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        transform: rotate(180deg);
+    }
+}
+
+
+@media (max-width: 768px){
+    .navbar {
+        padding: 2rem 2rem;
+    }
+    .navbar__links-container {
+        position: absolute;
+        top: 99%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar__link {
+        display: block;
+        margin: 2rem 0;
+    }
+    .btn_menu {
+        position: absolute;
+        right: -25%;
+    }
+}
+

@@ -9,6 +9,9 @@
 @import "./base/reset";
 
 // Components
+@import "./components/carousel";
+@import "./components/menu";
 
 // Layout
 @import "./layout/header";
+@import "./layout/mediaQueries";
