@@ -39,6 +39,8 @@
     .slide span {
         color: $light-white;
         text-transform: capitalize;
+        font-size: 3rem;
+        padding-bottom: 2rem;
     }
     .slide h2, .slide h2 span {
         color: $white;
@@ -46,9 +48,49 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 8vw;
+        text-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        line-height: 1;
     }
     .slide a {
         color: $white;
         text-transform: capitalize;
+        padding: 1rem 3rem;
+        background-color: $peru;
+        cursor: pointer;
+    }
+    .slide a:hover {
+        letter-spacing: .2rem;
+    }
+}
+
+// Custom arrows
+.swiper-button-next,
+.swiper-button-prev {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: $white;
+    color: $light-black;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: $peru;
+    color: $white;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px){
+    .home {
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+    .slide h2, .slide h2 span {
+        font-size: 14vw;
+    }
     }
 }

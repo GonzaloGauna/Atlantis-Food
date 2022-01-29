@@ -9,6 +9,9 @@ menu.onclick = () => {
 };
 
 const swiper = new Swiper('.home-swiper', {
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
