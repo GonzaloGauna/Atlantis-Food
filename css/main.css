@@ -59,6 +59,11 @@ body {
   max-width: 100vw;
   overflow-x: hidden; }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-4rem) scale(0);
+    opacity: 0; } }
+
 .home .slide {
   width: 100vw;
   height: 100vh;
@@ -94,13 +99,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  display: none; }
 
 .home .slide span {
   color: #ccc;
   text-transform: capitalize;
   font-size: 3rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.2s backwards; }
 
 .home .slide h2, .home .slide h2 span {
   color: #fff;
@@ -112,15 +119,22 @@ body {
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   line-height: 1; }
 
+.home .slide h2 {
+  animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.4s backwards; }
+
 .home .slide a {
   color: #fff;
   text-transform: capitalize;
   padding: 1rem 3rem;
   background-color: #cd9452;
-  cursor: pointer; }
+  cursor: pointer;
+  animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.6s backwards; }
 
 .home .slide a:hover {
   letter-spacing: .2rem; }
+
+.home .swiper-slide-active .slide__content {
+  display: flex; }
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -249,10 +263,20 @@ body {
     .about .about__content .about__items .about__item img {
       padding-top: 2rem; }
 
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
+  .abaut__image {
+    min-width: 50%; }
+  .about__item {
+    flex: 1 1 16rem; } }
+
 @media (min-width: 768px) {
   .about {
     display: flex;
-    flex-basis: calc(50% - 2rem);
     align-items: center;
     gap: 2rem; }
   .abaut__image {
