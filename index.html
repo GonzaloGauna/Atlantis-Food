@@ -25,7 +25,7 @@
                 <nav id="navBar" class="navbar__links-container">
                     <a class="navbar__link" href="#home">home</a>
                     <a class="navbar__link" href="#about">about</a>
-                    <a class="navbar__link" href="#">food</a>
+                    <a class="navbar__link" href="#food">food</a>
                     <a class="navbar__link" href="#">gallery</a>
                     <a class="navbar__link" href="#">menu</a>
                     <a class="navbar__link" href="#">order</a>
@@ -36,6 +36,7 @@
             </section>
         </header>
         <main>
+
             <section id="home" class="home swiper home-swiper">
                 <div class="swiper-wrapper">
                     <div class="slide slide-1 swiper-slide">
@@ -63,6 +64,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </section>
+
             <section id="about" class="about">
                 <div class="abaut__image">
                     <img src="./images/about-img.png" alt="breakfast" width="100%">
@@ -87,6 +89,46 @@
                     </div>
                 </div>
             </section>
+
+            <section id="food" class="food">
+                <div class="food-heading">
+                    <span>Popular Dishes</span>
+                    <h2>Our Delicious Food</h2>
+                </div>
+                <div class="swiper food-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide food-slider__card" data-name="food-1">
+                            <img src="./images/food-img-1.png" alt="Popular Dishes">
+                            <h4>Delicious Food</h4>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="swiper-slide food-slider__card" data-name="food-2">
+                            <img src="./images/food-img-2.png" alt="Popular Dishes">
+                            <h4>Popular Dishes</h4>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="swiper-slide food-slider__card" data-name="food-3">
+                            <img src="./images/food-img-3.png" alt="Popular Dishes">
+                            <h4>Delicious Food</h4>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="swiper-slide food-slider__card" data-name="food-4">
+                            <img src="./images/food-img-4.png" alt="Popular Dishes">
+                            <h4>Popular Dishes</h4>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="swiper-slide food-slider__card" data-name="food-5">
+                            <img src="./images/food-img-5.png" alt="Popular Dishes">
+                            <h4>Delicious Food</h4>
+                            <span>$49.99</span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+
+            </section>
+
         </main>
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

@@ -1,0 +1,60 @@
+.food {
+    display: block;
+    background-color: $light-bg;
+    padding-top: 5rem;
+    .food-heading {
+        text-align: center;
+        margin-bottom: 3rem;
+        span{
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: $peru;
+        }
+    }
+    .food-slider {
+        width: 75%;
+    }
+    .food-slider__card {
+        opacity: .5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: scale(.9);
+        margin-bottom: 8rem;
+        cursor: pointer;
+        img {
+            padding: 2.5rem 2rem 0rem 2rem;
+            transform: scale(.8);
+            width: 70%;
+        }
+        span {
+            font-size: 2.5rem;
+            color: $peru;
+            margin: 2rem 0 3rem 0;
+        }
+    }
+    .swiper-slide-active {
+        opacity: 1;
+        transform: scale(1);
+        border: $border;
+        background-color: $white;
+        box-shadow: $box-shadow;
+    }
+    .swiper-pagination {
+        padding: 3rem 0;
+    }
+    .swiper-pagination-bullet-active{
+        background: $peru;
+    }
+}
+
+@media(max-width: 700px){
+    .food {
+        .food-slider {
+            width: 95%;
+            .food-slider__card {
+                transform: scale(.9);
+            }
+        }
+    }
+}
